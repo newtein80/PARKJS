@@ -1,0 +1,3 @@
+﻿Command 와 관련된 Request 관련 property 설정
+
+--> CUD(Command) 와 관련된 Request 설정, CUD 는 Validation 도 해야하기 때문에 ValidationResult 도 필요

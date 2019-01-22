@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{DFAC44BC-C84F-466E-8C88-0C40BD33B6E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{78B541A5-FF24-46CD-9F91-F95E6F137484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PARKJS.Domain.Core", "PARKJS.Domain.Core\PARKJS.Domain.Core.csproj", "{EC828D09-9116-4670-AED5-242D93862ED6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{A6542462-CA9F-4EED-B30F-14F1F0771B46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{55BB4AED-E364-4F66-89BE-88B18BD15F62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PARKJS.Infra.CrossCutting.Bus", "PARKJS.Infra.CrossCutting.Bus\PARKJS.Infra.CrossCutting.Bus.csproj", "{3053DF46-94CB-48AC-A298-DEF943A96249}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PARKJS.Domain", "PARKJS.Domain\PARKJS.Domain.csproj", "{CCCC582B-97B5-40B3-B9CA-810024783784}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC828D09-9116-4670-AED5-242D93862ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC828D09-9116-4670-AED5-242D93862ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC828D09-9116-4670-AED5-242D93862ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC828D09-9116-4670-AED5-242D93862ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3053DF46-94CB-48AC-A298-DEF943A96249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3053DF46-94CB-48AC-A298-DEF943A96249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3053DF46-94CB-48AC-A298-DEF943A96249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3053DF46-94CB-48AC-A298-DEF943A96249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCCC582B-97B5-40B3-B9CA-810024783784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCCC582B-97B5-40B3-B9CA-810024783784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCCC582B-97B5-40B3-B9CA-810024783784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCCC582B-97B5-40B3-B9CA-810024783784}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{78B541A5-FF24-46CD-9F91-F95E6F137484} = {DFAC44BC-C84F-466E-8C88-0C40BD33B6E3}
+		{EC828D09-9116-4670-AED5-242D93862ED6} = {78B541A5-FF24-46CD-9F91-F95E6F137484}
+		{A6542462-CA9F-4EED-B30F-14F1F0771B46} = {DFAC44BC-C84F-466E-8C88-0C40BD33B6E3}
+		{55BB4AED-E364-4F66-89BE-88B18BD15F62} = {A6542462-CA9F-4EED-B30F-14F1F0771B46}
+		{3053DF46-94CB-48AC-A298-DEF943A96249} = {55BB4AED-E364-4F66-89BE-88B18BD15F62}
+		{CCCC582B-97B5-40B3-B9CA-810024783784} = {78B541A5-FF24-46CD-9F91-F95E6F137484}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F740A995-8969-4A11-95F8-E731FF3D006D}
+	EndGlobalSection
+EndGlobal
