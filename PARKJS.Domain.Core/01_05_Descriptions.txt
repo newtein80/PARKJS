@@ -1,0 +1,1 @@
+﻿가장 기본적인 Entity, Model, Interface 정의 (추상클래스, 인터페이스)

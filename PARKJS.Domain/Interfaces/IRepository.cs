@@ -8,7 +8,6 @@ namespace PARKJS.Domain.Interfaces
     //https://slaner.tistory.com/122
     //https://slaner.tistory.com/126
     //https://godffs.tistory.com/209
-    //
     public interface IRepository<T> : IDisposable where T : class
     {
         void Add(T obj);

@@ -1,0 +1,2 @@
+﻿Command 클래스 및 유효성 검사 메소드 정의
+-- 11_02_Description.txt 반드시 참고
