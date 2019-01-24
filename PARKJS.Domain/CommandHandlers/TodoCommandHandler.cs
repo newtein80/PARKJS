@@ -40,7 +40,10 @@ namespace PARKJS.Domain.CommandHandlers
             {
                 NotifyValidationErrors(iRegistNewTodoCommand);
                 //return Task.CompletedTask;
-                return Unit.Task;
+
+                //https://github.com/jbogard/MediatR/wiki/Migration-Guide-4.x-to-5.0
+                //return Unit.Value; // for async/await
+                return Unit.Task; // for pure Task-based methods
             }
 
             var todo = new Todo(
@@ -54,7 +57,10 @@ namespace PARKJS.Domain.CommandHandlers
             {
                 mediatorHandler.RaiseEvent(new DomainNotification(iRegistNewTodoCommand.MessageType, "The Todo has already been taken"));
                 //return Task.CompletedTask;
-                return Unit.Task;
+
+                //https://github.com/jbogard/MediatR/wiki/Migration-Guide-4.x-to-5.0
+                //return Unit.Value; // for async/await
+                return Unit.Task; // for pure Task-based methods
             }
 
             todoRepository.Add(todo);
@@ -65,7 +71,10 @@ namespace PARKJS.Domain.CommandHandlers
             }
 
             //return Task.CompletedTask;
-            return Unit.Task;
+
+            //https://github.com/jbogard/MediatR/wiki/Migration-Guide-4.x-to-5.0
+            //return Unit.Value; // for async/await
+            return Unit.Task; // for pure Task-based methods
         }
 
         public Task<Unit> Handle(RemoveTodoCommand iRemoveTodoCommand, CancellationToken cancellationToken)
